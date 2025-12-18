@@ -14,20 +14,20 @@ function App() {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]); //QDO recebe como 1ro param uma função e como 2ndo uma lista NÃO VAZIA, executa a 1a função sempre que a lista é atualizada **
 
-  useEffect(() => {
-    //chama API
-    const fetchTasks = async () => {
-      const response = await fetch(
-        "https://jsonplaceholder.typicode.com/todos?_limit=6",
-        {
-          method: "GET",
-        }
-      );
-      const data = await response.json();
-      setTasks(data);
-    };
-    //fetchTasks();
-  }, []); //...quando o s2ndo param é uma lista vazia, é executado apenas ao abrir a aplicação
+  // useEffect(() => {
+  //   //chama API
+  //   const fetchTasks = async () => {
+  //     const response = await fetch(
+  //       "https://jsonplaceholder.typicode.com/todos?_limit=6",
+  //       {
+  //         method: "GET",
+  //       }
+  //     );
+  //     const data = await response.json();
+  //     setTasks(data);
+  //   };
+  //   //fetchTasks();
+  // }, []); //...quando o s2ndo param é uma lista vazia, é executado apenas ao abrir a aplicação
 
   function onCheckClick(taskId) {
     const newTasks = tasks.map((task) => {
