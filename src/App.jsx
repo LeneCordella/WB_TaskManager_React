@@ -19,13 +19,15 @@ function App() {
     const fetchTasks = async () => {
       const response = await fetch(
         "https://jsonplaceholder.typicode.com/todos?_limit=6",
-        { method: "GET" }
+        {
+          method: "GET",
+        }
       );
       const data = await response.json();
       setTasks(data);
     };
-    fetchTasks();
-  }, []); //...quando o sendo param é uma lista vazia, é executado apenas ao abrir a aplicação
+    //fetchTasks();
+  }, []); //...quando o s2ndo param é uma lista vazia, é executado apenas ao abrir a aplicação
 
   function onCheckClick(taskId) {
     const newTasks = tasks.map((task) => {
