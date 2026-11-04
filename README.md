@@ -1,24 +1,50 @@
 # WB Task Manager
 
-A simple and clean task manager built with React, Vite, and React Router. The app lets you add tasks, mark them as complete or pending, delete them, and view task details in a dedicated page.
+<div align="center">
+
+![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react)
+![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite)
+![Tailwind](https://img.shields.io/badge/Tailwind-4-06B6D4?style=for-the-badge&logo=tailwindcss)
+
+</div>
+
+A task management application built with React to practice state management, component composition, routing, and browser persistence.
+
+## Live Demo
+
+Visit the deployed app here:
+
+https://wb-task-manager-react-quvg1882w-lenecdrs-projects.vercel.app/
+
+## Overview
+
+This project allows users to:
+
+- create tasks with a title and description
+- mark tasks as completed or pending
+- delete tasks from the list
+- open a dedicated task details page
+- keep task data saved locally in the browser
+
+It was created as a frontend learning project using React and Vite.
 
 ## Features
 
-- Add a new task with a title and description
-- Toggle tasks between pending and done states
-- Delete tasks from the list
-- View task details in a separate route
-- Persist tasks in the browser using localStorage
-- Responsive, lightweight interface with modern styling
+- Add tasks
+- Toggle completion status
+- Remove tasks
+- View task details
+- Local persistence with localStorage
+- Clean and responsive interface
 
 ## Tech Stack
 
-- React 18
+- React
 - Vite
 - React Router
 - Tailwind CSS
-- Lucide React icons
-- uuid for unique task IDs
+- Lucide React
+- UUID
 
 ## Project Structure
 
@@ -28,98 +54,182 @@ src/
 ├── main.jsx
 ├── index.css
 ├── App.css
+├── assets/
 ├── components/
 │   ├── AddTask.jsx
 │   ├── Button.jsx
 │   ├── Input.jsx
 │   ├── Tasks.jsx
 │   └── Title.jsx
-├── pages/
-│   └── TaskDetail.jsx
-└── assets/
+└── pages/
+    └── TaskDetail.jsx
 ```
 
-## Prerequisites
+## Screenshots
 
-Before running this project, make sure you have installed:
-
-- Node.js 18 or later
-- npm or yarn
+> Add screenshots of the app interface here to showcase the project.
 
 ## Getting Started
 
-1. Clone the repository:
+### Prerequisites
+
+- Node.js 18+
+- npm
+
+### Installation
 
 ```bash
-git clone <your-repository-url>
+git clone <url-do-repositorio>
 cd WB_TaskManager_React
-```
-
-2. Install dependencies:
-
-```bash
 npm install
 ```
 
-3. Start the development server:
+### Run locally
 
 ```bash
 npm run dev
 ```
 
-4. Open the app in your browser. The Vite development server will usually provide a local URL such as:
+Open the local URL shown in the terminal, usually:
 
 ```bash
 http://localhost:5173
 ```
 
-## Available Scripts
+---
+
+# WB Task Manager (Português)
+
+Aplicação de gerenciamento de tarefas desenvolvida em React para praticar gerenciamento de estado, componentes, rotas e persistência no navegador.
+
+## Demo
+
+Acesse a versão publicada:
+
+https://wb-task-manager-react-quvg1882w-lenecdrs-projects.vercel.app/
+
+## Visão geral
+
+Este projeto permite:
+
+- criar tarefas com título e descrição
+- marcar tarefas como concluídas ou pendentes
+- excluir tarefas da lista
+- acessar uma página de detalhes de cada tarefa
+- manter os dados salvos localmente no navegador
+
+O projeto foi criado como estudo prático de frontend com React e Vite.
+
+## Funcionalidades
+
+- Adicionar tarefas
+- Alternar status de conclusão
+- Remover tarefas
+- Visualizar detalhes da tarefa
+- Persistência com localStorage
+- Interface limpa e responsiva
+
+## Stack tecnológica
+
+- React
+- Vite
+- React Router
+- Tailwind CSS
+- Lucide React
+- UUID
+
+## Estrutura do projeto
+
+```bash
+src/
+├── App.jsx
+├── main.jsx
+├── index.css
+├── App.css
+├── assets/
+├── components/
+│   ├── AddTask.jsx
+│   ├── Button.jsx
+│   ├── Input.jsx
+│   ├── Tasks.jsx
+│   └── Title.jsx
+└── pages/
+    └── TaskDetail.jsx
+```
+
+## Como executar
+
+### Pré-requisitos
+
+- Node.js 18+
+- npm
+
+### Instalação
+
+```bash
+git clone <url-do-repositorio>
+cd WB_TaskManager_React
+npm install
+```
+
+### Rodar localmente
 
 ```bash
 npm run dev
 ```
 
-Starts the Vite development server.
+Acesse a URL que o Vite mostrar no terminal, normalmente:
+
+```bash
+http://localhost:5173
+```
+
+## Scripts disponíveis
+
+```bash
+npm run dev
+```
+
+Inicia o projeto em modo de desenvolvimento.
 
 ```bash
 npm run build
 ```
 
-Builds the app for production.
+Gera a build de produção.
 
 ```bash
 npm run preview
 ```
 
-Serves the production build locally for preview.
+Abre uma prévia da build localmente.
 
 ```bash
 npm run lint
 ```
 
-Runs ESLint to check code quality.
+Executa a validação do código com ESLint.
 
-## Usage
+## Como usar
 
-- Enter a task title and description in the form
-- Click "Add Task" to create a task
-- Use the task button to mark it as done or pending
-- Click the details arrow to open the task detail page
-- Use the trash button to remove a task
+1. Digite o título e a descrição da tarefa.
+2. Clique em "Add Task".
+3. Use o botão da tarefa para marcar como concluída ou pendente.
+4. Abra a página de detalhes para ver os dados completos.
+5. Exclua qualquer tarefa pelo botão de lixeira.
 
-## Notes
+## Observações
 
-Tasks are stored in the browser's localStorage, so they remain available after refreshes unless the browser storage is cleared.
+As tarefas ficam salvas no localStorage do navegador e continuam disponíveis após recarregamentos até que os dados do navegador sejam limpos.
 
-## Tutorial Reference
+## Referência do tutorial
 
-This project was created as a guided learning exercise based on the React For Beginners course by Felipe Rocha on YouTube.
+Este projeto foi desenvolvido seguindo o guia do curso React para Iniciantes do canal Felipe Rocha no YouTube.
 
-- YouTube channel: Felipe Rocha
-- Course: React para Iniciantes
-- Tutorial used as guidance for this project
-- Link: https://youtu.be/2RWsLmu8yVc
+- Canal: Felipe Rocha
+- Curso: React para Iniciantes
+- Vídeo: https://youtu.be/2RWsLmu8yVc
 
-## License
+## Licença
 
-This project is intended for learning and personal use.
+Este projeto foi desenvolvido para fins de estudo e uso pessoal.
