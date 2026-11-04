@@ -22,7 +22,7 @@ function Tasks({ tasks, onCheckClick, onDeleteClick }) {
           <li key={task.id} className="flex gap-2">
             <button
               onClick={() => onCheckClick(task.id)}
-              className={`generic-button text-left p-5 ml-4 bg-slate-400 text-black flex- ${
+              className={`generic-button text-left p-5 ml-4 bg-slate-400 text-black flex items-center gap-2${
                 task.isCompleted && "line-through"
               }`}
             >
