@@ -67,7 +67,10 @@ src/
 
 ## Screenshots
 
-> Add screenshots of the app interface here to showcase the project.
+<p align="center">
+  <img src="src/assets/screenshot%2001.png" alt="Screenshot 01" width="420" />
+  <img src="src/assets/screenshot%2002.png" alt="Screenshot 02" width="420" />
+</p>
 
 ## Getting Started
 
@@ -156,6 +159,13 @@ src/
 └── pages/
     └── TaskDetail.jsx
 ```
+
+## Printscreens
+
+<p align="center">
+  <img src="src/assets/screenshot%2001.png" alt="Screenshot 01" width="420" />
+  <img src="src/assets/screenshot%2002.png" alt="Screenshot 02" width="420" />
+</p>
 
 ## Como executar
 
